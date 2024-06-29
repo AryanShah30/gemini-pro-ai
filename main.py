@@ -11,7 +11,7 @@ from gemini_utility import load_gemini_pro_model, gemini_pro_vision_response, em
 working_directory = os.path.dirname(os.path.abspath(__file__))
 
 # setting up the page configuration
-st.set_page_config(page_title="Gemini Pro AI", page_icon="🧠", layout="centered")
+st.set_page_config(page_title="Gemini Pro AI", page_icon="🧠", layout="wide")
 
 with st.sidebar:
     selected = option_menu(
