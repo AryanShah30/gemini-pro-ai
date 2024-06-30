@@ -28,6 +28,7 @@ with st.sidebar:
             "Code Beautifier",
             "Code Correction",
             "Query Resolver",
+            "Connect"
         ],
         menu_icon="robot",
         icons=[
@@ -42,6 +43,7 @@ with st.sidebar:
             "file-code",
             "wrench",
             "patch-question-fill",
+            "person-lines-fill"
         ],
         default_index=0,
     )
@@ -481,3 +483,22 @@ if selected == "Code Correction":
     if st.button("Correct Code"):
         response = gemini_pro_correct(text)
         st.success(response)
+
+# connect page
+if selected == "Connect":
+    import streamlit as st
+
+    st.title("Connect with Me")
+    st.markdown("""
+        Feel free to reach out to me via email or connect with me on LinkedIn and GitHub! 💬
+    """)
+    st.write("")
+
+    st.subheader("Contact Information 📩")
+    st.write("**Name:** Aryan Shah")
+    st.write("**Email:** aryanshah1957@gmail.com")
+    st.write("")
+
+    st.subheader("Social Media 🌍")
+    st.write("[LinkedIn](https://www.linkedin.com/in/aryanashah/) 🔗")
+    st.write("[GitHub](https://github.com/AryanShah30) 🔗")
