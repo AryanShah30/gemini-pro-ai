@@ -17,6 +17,7 @@ with st.sidebar:
     selected = option_menu(
         "Gemini Pro AI",
         [
+            "Introduction",
             "ChatBot",
             "Translate",
             "Image Captioning",
@@ -32,6 +33,7 @@ with st.sidebar:
         ],
         menu_icon="robot",
         icons=[
+            "info-circle-fill",
             "chat-dots-fill",
             "translate",
             "image-fill",
@@ -49,6 +51,25 @@ with st.sidebar:
     )
 
 
+if selected == "Introduction":
+    st.title("Multi-Functional AI Toolkit")
+    st.write("Welcome to our versatile AI-powered toolkit, built using Google's Gemini Pro, designed to streamline your tasks with cutting-edge technologies. ")
+    st.write("Explore a range of functionalities through the sidebar navigation to discover how each tool can enhance your workflow.")
+
+    st.write("")
+    st.subheader("Tools Available:")
+    st.write("- 🤖 **ChatBot:** Engage in interactive conversations.")
+    st.write("- 🌍 **Translate:** Translate text between languages seamlessly.")
+    st.write("- 🖼️ **Image Captioning:** Generate captions for images automatically.")
+    st.write("- 📝 **Text Embedding:** Encode text into numerical representations.")
+    st.write("- 😊 **Sentiment Analysis:** Analyze sentiment polarity in text.")
+    st.write("- 📑 **Document Summarization:** Summarize lengthy documents quickly.")
+    st.write("- 🔍 **Named Entity Recognition:** Identify entities within text.")
+    st.write("- ⚠️**Anomaly Detection:** Detect outliers or anomalies in data.")
+    st.write("- 💻 **Code Beautifier:** Format your code for readability.")
+    st.write("- 🛠️ **Code Correction:** Automatically correct syntax errors in code.")
+    st.write("- 🔮 **Query Resolver:** Resolve queries based on predefined knowledge.")
+
 # function to translate role between gemini-pro and streamlit terminologies
 def translate_role_for_streamlit(user_role):
     if user_role == "model":
@@ -57,7 +78,7 @@ def translate_role_for_streamlit(user_role):
         return user_role
 
 
-# chat bot page
+# chatbot page
 if selected == "ChatBot":
 
     model = load_gemini_pro_model()
