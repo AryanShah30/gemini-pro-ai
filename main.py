@@ -52,6 +52,11 @@ with st.sidebar:
 
 
 if selected == "Introduction":
+     st.markdown("""
+    <div style='color: gray; font-size: 15px;'>
+        Last updated on 29/06/2024.
+    </div>
+    """, unsafe_allow_html=True)
     st.title("Multi-Functional AI Toolkit")
     st.write("Welcome to versatile AI-powered toolkit, built using Google's Gemini Pro, designed to streamline your tasks with cutting-edge technologies. ")
     st.write("Explore a range of functionalities through the sidebar navigation to discover how each tool can enhance your workflow.")
@@ -69,11 +74,6 @@ if selected == "Introduction":
     st.write("- 💻 **Code Beautifier:** Format your code for readability.")
     st.write("- 🛠️ **Code Correction:** Automatically correct syntax errors in code.")
     st.write("- 🔮 **Query Resolver:** Resolve queries based on predefined knowledge.")
-    st.markdown("""
-    <div style='color: gray; font-size: 15px;'>
-        Last updated on 29/06/2024.
-    </div>
-    """, unsafe_allow_html=True)
 
 # function to translate role between gemini-pro and streamlit terminologies
 def translate_role_for_streamlit(user_role):
