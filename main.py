@@ -70,7 +70,7 @@ if selected == "Introduction":
     st.write("- 🛠️ **Code Correction:** Automatically correct syntax errors in code.")
     st.write("- 🔮 **Query Resolver:** Resolve queries based on predefined knowledge.")
     st.markdown("""
-    <div style='text-align: center; color: gray; font-size: 15px;'>
+    <div style='color: gray; font-size: 15px;'>
         Last updated on 29/06/2024.
     </div>
     """, unsafe_allow_html=True)
