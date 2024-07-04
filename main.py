@@ -58,6 +58,7 @@ if selected == "Introduction":
         Last updated on 29/06/2024.
     </div>
     """, unsafe_allow_html=True)
+    st.markdown("---")
     st.write("Welcome to versatile AI-powered toolkit, built using Google's Gemini Pro, designed to streamline your tasks with cutting-edge technologies. ")
     st.write("Explore a range of functionalities through the sidebar navigation to discover how each tool can enhance your workflow.")
 
