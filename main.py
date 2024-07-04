@@ -74,6 +74,7 @@ if selected == "Introduction":
     st.write("- 💻 **Code Beautifier:** Format your code for readability.")
     st.write("- 🛠️ **Code Correction:** Automatically correct syntax errors in code.")
     st.write("- 🔮 **Query Resolver:** Resolve queries based on predefined knowledge.")
+    st.markdown("---")
 
 # function to translate role between gemini-pro and streamlit terminologies
 def translate_role_for_streamlit(user_role):
