@@ -61,8 +61,7 @@ if selected == "Introduction":
     st.markdown("---")
     st.write("Welcome to versatile AI-powered toolkit, built using Google's Gemini Pro, designed to streamline your tasks with cutting-edge technologies. ")
     st.write("Explore a range of functionalities through the sidebar navigation to discover how each tool can enhance your workflow.")
-
-    st.write("")
+    st.markdown("---")
     st.subheader("Tools Available:")
     st.write("- 🤖 **ChatBot:** Engage in interactive conversations.")
     st.write("- 🌍 **Translate:** Translate text between languages seamlessly.")
