@@ -52,12 +52,12 @@ with st.sidebar:
 
 
 if selected == "Introduction":
-     st.markdown("""
+    st.title("Multi-Functional AI Toolkit")
+    st.markdown("""
     <div style='color: gray; font-size: 15px;'>
         Last updated on 29/06/2024.
     </div>
     """, unsafe_allow_html=True)
-    st.title("Multi-Functional AI Toolkit")
     st.write("Welcome to versatile AI-powered toolkit, built using Google's Gemini Pro, designed to streamline your tasks with cutting-edge technologies. ")
     st.write("Explore a range of functionalities through the sidebar navigation to discover how each tool can enhance your workflow.")
 
