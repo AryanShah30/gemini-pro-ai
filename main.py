@@ -69,6 +69,11 @@ if selected == "Introduction":
     st.write("- 💻 **Code Beautifier:** Format your code for readability.")
     st.write("- 🛠️ **Code Correction:** Automatically correct syntax errors in code.")
     st.write("- 🔮 **Query Resolver:** Resolve queries based on predefined knowledge.")
+    st.markdown("""
+    <div style='text-align: center; color: gray; font-size: 12px;'>
+        &copy; Last updated on 29/06/2024.
+    </div>
+    """, unsafe_allow_html=True)
 
 # function to translate role between gemini-pro and streamlit terminologies
 def translate_role_for_streamlit(user_role):
